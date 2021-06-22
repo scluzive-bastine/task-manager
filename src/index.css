@@ -1,13 +1,35 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #a2a9b3;
+}
+.task__manager--container {
+  background-color: #fff;
+  color: #333;
+  border-radius: 20px;
+  width: 500px;
+  min-height: 300px;
+  padding: 20px;
+  margin: 50px auto;
+}
+
+.task:hover .task-content {
+  transform: translateX(-100px);
+}
+/* .task:hover .completed {
+  display: flex;
+  transform: translateX(-20px);
+} */
+
+.action {
+  height: 40px !important;
 }
